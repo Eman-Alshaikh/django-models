@@ -1,0 +1,17 @@
+{ % extends '_base.html' %}
+{ % block content %}
+
+<nav>
+    <a href="{% url 'snacks_list' %}">Home</a>
+    <a href="{% url 'admin:index' %}">Admin</a>
+
+</nav>
+
+<section>
+    <h2>{{snacks.name}}</h2>
+    <p>Description:{{snacks.Description}}</p>
+    <p>Purchaser:{{snacks.Purchaser}}</p>
+
+</section>
+
+{% endblock content %}
